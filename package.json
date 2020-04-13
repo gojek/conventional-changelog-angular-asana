@@ -1,0 +1,39 @@
+{
+  "name": "conventional-changelog-angular-asana",
+  "version": "1.0.0",
+  "description": "conventional-changelog angular asana preset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gojek/conventional-changelog-angular-asana.git"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "angular",
+    "asana",
+    "preset"
+  ],
+  "author": "Debjeet Biswas <debjeet12@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gojek/conventional-changelog-angular-asana/issues"
+  },
+  "homepage": "https://github.com/gojek/conventional-changelog-angular-asana#readme",
+  "dependencies": {
+    "compare-func": "^1.3.2",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
