@@ -58,3 +58,36 @@
     {{~this.repository}}#{{this.issue}}
   {{~/if}}{{/each}}
 {{~/if}}
+
+{{~!-- asana commit references --}}
+{{~#if asanaRefs~}}
+  {{~#if references~}}
+    {{~#each asanaRefs}} {{#if @root.linkReferences~}}
+      [
+      {{~#if this.text~}}
+        #{{~this.text}}
+      {{~/if}}](
+      {{~#if this.href}}
+        {{~this.href}}
+      {{~/if}}){{~else}}
+      {{~#if this.text}}#
+        {{~this.text}}
+      {{~/if}}
+    {{/if}}{{/each}}
+  {{~else}}, closes
+    {{~#each asanaRefs}} {{#if @root.linkReferences~}}
+      [
+      {{~#if this.text~}}
+        #{{~this.text}}
+      {{~/if}}](
+      {{~#if this.href}}
+        {{~this.href}}
+      {{~/if}})
+    {{~else}}
+      {{~#if this.text}}#
+        {{~this.text}}
+      {{~/if}}
+    {{~/if}}{{/each}}
+  {{~/if}}
+{{~/if}}
+

@@ -4,6 +4,7 @@ const compareFunc = require("compare-func")
 const Q = require("q")
 const readFile = Q.denodeify(require("fs").readFile)
 const resolve = require("path").resolve
+const parseAsanaRefs = require("./parse-asana-refs")
 
 module.exports = Q.all([
   readFile(resolve(__dirname, "./templates/template.hbs"), "utf-8"),
@@ -26,11 +27,14 @@ function getWriterOpts() {
     transform: (commit, context) => {
       let discard = true
       const issues = []
+      commit.asanaRefs = []
 
       commit.notes.forEach((note) => {
         note.title = "BREAKING CHANGES"
         discard = false
       })
+
+      commit.asanaRefs = parseAsanaRefs(commit)
 
       if (commit.type === "feat") {
         commit.type = "Features"
