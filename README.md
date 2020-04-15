@@ -27,4 +27,4 @@ BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite
 
 ## Issues/Questions?
 
-[Open an issue](/issues)
+[Open an issue](../../issues)
