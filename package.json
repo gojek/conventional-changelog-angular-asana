@@ -1,6 +1,6 @@
 {
   "name": "@gojek/conventional-changelog-angular-asana",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "asana task references support for your conventional commits",
   "main": "index.js",
   "scripts": {
