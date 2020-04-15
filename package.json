@@ -1,7 +1,7 @@
 {
-  "name": "conventional-changelog-angular-asana",
+  "name": "@gojek/conventional-changelog-angular-asana",
   "version": "1.0.0",
-  "description": "conventional-changelog angular asana preset",
+  "description": "asana task references support for your conventional commits",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
