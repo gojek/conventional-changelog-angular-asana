@@ -14,13 +14,17 @@ fix(pencil): add `graphiteWidth` option
 fixes https://app.asana.com/0/12345678/12345678
 ```
 
-Existing references can co-exist
+References can co-exist
 
 ```
-perf(pencil): remove graphiteWidth option
-
-BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason
+perf(pencil)!: remove graphiteWidth option
 
 closes #28
 fixes https://app.asana.com/0/12345678/12345678
+
+BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason
 ```
+
+## Issues/Questions?
+
+[Open an issue](/issues)
