@@ -40,7 +40,7 @@ $ npm install @gojek/conventional-changelog-angular-asana --save-dev
 When using with [lerna](https://lerna.js.org/) [version](https://github.com/lerna/lerna/tree/master/commands/version) Set the `--changelog-preset` flag.
 
 ```
-$ lerna version --conventional-commits --changelog-preset angular-asana
+$ lerna version --conventional-commits --changelog-preset @gojek/angular-asana
 ```
 
 Or, if using [`lerna.json`](https://github.com/lerna/lerna#lernajson), pass it in **"conventionalCommits"** option.
@@ -48,7 +48,7 @@ Or, if using [`lerna.json`](https://github.com/lerna/lerna#lernajson), pass it i
 ```json
 "command": {
   "version": {
-    "conventionalCommits": "angular-asana"
+    "conventionalCommits": "@gojek/angular-asana"
   }
 ```
 
