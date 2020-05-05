@@ -34,7 +34,7 @@ Use this preset, like any other other conventional-changelog presets.
 Install as a devDevdependency first.
 
 ```
-$ npm install conventional-changelog-angular-asana --save-dev
+$ npm install @gojek/conventional-changelog-angular-asana --save-dev
 ```
 
 When using with [lerna](https://lerna.js.org/) [version](https://github.com/lerna/lerna/tree/master/commands/version) Set the `--changelog-preset` flag.
