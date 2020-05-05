@@ -25,6 +25,27 @@ fixes https://app.asana.com/0/12345678/12345678
 BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason
 ```
 
+## Usage
+
+Use this preset, like any other other conventional-changelog presets.
+
+### With Lerna
+
+When using with [Lerna](https://lerna.js.org/), you can set the `--changelog-preset` flag. [Lerna more about lerna version](https://github.com/lerna/lerna/tree/master/commands/version).
+
+```
+$ lerna version --conventional-commits --changelog-preset angular-asana
+```
+
+Or, if using [`lerna.json`](https://github.com/lerna/lerna#lernajson), pass it in **"conventionalCommits"** option.
+
+```json
+"command": {
+  "version": {
+    "conventionalCommits": "angular-asana"
+  }
+```
+
 ## Issues/Questions?
 
 [Open an issue](../../issues)
