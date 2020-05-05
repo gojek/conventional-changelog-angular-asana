@@ -31,7 +31,13 @@ Use this preset, like any other other conventional-changelog presets.
 
 ### With Lerna
 
-When using with [Lerna](https://lerna.js.org/), you can set the `--changelog-preset` flag. [Lerna more about lerna version](https://github.com/lerna/lerna/tree/master/commands/version).
+Install as a devDevdependency first.
+
+```
+$ npm install conventional-changelog-angular-asana --save-dev
+```
+
+When using with [lerna](https://lerna.js.org/) [version](https://github.com/lerna/lerna/tree/master/commands/version) Set the `--changelog-preset` flag.
 
 ```
 $ lerna version --conventional-commits --changelog-preset angular-asana
@@ -45,6 +51,8 @@ Or, if using [`lerna.json`](https://github.com/lerna/lerna#lernajson), pass it i
     "conventionalCommits": "angular-asana"
   }
 ```
+
+Lerna automatically prepends `conventional-changelog-`, so node module resolution will resolve to the correct package.
 
 ## Issues/Questions?
 
