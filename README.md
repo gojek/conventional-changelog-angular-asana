@@ -43,16 +43,17 @@ When using with [lerna](https://lerna.js.org/) [version](https://github.com/lern
 $ lerna version --conventional-commits --changelog-preset @gojek/angular-asana
 ```
 
-Or, if using [`lerna.json`](https://github.com/lerna/lerna#lernajson), pass it in **"conventionalCommits"** option.
+Or, if using [`lerna.json`](https://github.com/lerna/lerna#lernajson), set the following.
 
 ```json
 "command": {
   "version": {
-    "conventionalCommits": "@gojek/angular-asana"
+    "conventionalCommits": true,
+    "changelogPreset": "@gojek/angular-asana",
   }
 ```
 
-Lerna automatically prepends `conventional-changelog-`, so node module resolution will resolve to the correct package.
+Lerna automatically evaluates & prepends `conventional-changelog-` to the preset, so node module resolution resolves to the correct package.
 
 ## Issues/Questions?
 
